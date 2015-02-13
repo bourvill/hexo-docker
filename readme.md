@@ -3,7 +3,7 @@ Initial Launch
 
 Launch one docker instance and copy the blog dir
 
-docker run --name=hexoinit hexo
+docker run --name=hexoinit bourvill/hexo-docker
 
 and 
 
@@ -14,7 +14,7 @@ Edit the _config.yml and check the ip address
 
 after this, you can launch your blog in the sky !
 
-docker run -d -p 4000:4000 -v /your/directory/install:/blog hexo
+docker run -d -p 4000:4000 -v /your/directory/install:/blog bourvill/hexo-docker
 
 
 Create post
