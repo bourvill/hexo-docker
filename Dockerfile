@@ -1,4 +1,4 @@
-FROM dockerfile/nodejs
+FROM node:0.10
 
 RUN npm install hexo -g && hexo init /blog/ && cd /blog/ && npm install
 
